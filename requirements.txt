@@ -1,0 +1,6 @@
+pillow>=10.0
+pyautogui>=0.9.54
+keyboard>=0.13.5
+pyperclip>=1.8.2
+# 可选：Windows 桌面通知
+win10toast>=0.9
