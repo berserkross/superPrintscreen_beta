@@ -42,11 +42,11 @@ python superPrintscreen_beta.py
 ## Platform notes
 - Windows：ImageGrab 通常可用；全局热键以普通用户运行。
 - macOS：截图可能走 Pillow/ImageGrab 或系统后端；若用 pyautogui 截图，
-  需在“隐私与安全性→屏幕录制/辅助功能”授权终端/IDE。[6,9](@ref)
+  需在“隐私与安全性→屏幕录制/辅助功能”授权终端/IDE。
   Retina 下逻辑坐标与物理像素可能不同，取色坐标需注意缩放。
 - Linux：ImageGrab 对 X11 支持有限，Wayland 常需 xdg-desktop-portal/授权；
-  可用 pyautogui.screenshot 或 mss 作替代后端。部分环境需 scrot、python3-xlib、python3-tk。[1,3,6](@ref)
-- 多显示器：PyAutoGUI/ImageGrab 默认主屏行为不一致，绝对区域要按主屏分辨率调。[2](@ref)
+  可用 pyautogui.screenshot 或 mss 作替代后端。部分环境需 scrot、python3-xlib、python3-tk。
+- 多显示器：PyAutoGUI/ImageGrab 默认主屏行为不一致，绝对区域要按主屏分辨率调。
 
 ## Known limitations (beta)
 - 坐标/RGB 轮询约 100ms，高刷新场景有轻微延迟
